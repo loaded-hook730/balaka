@@ -1,5 +1,7 @@
 # Balaka
 
+[![CI](https://github.com/stremovskyy/balaka/actions/workflows/ci.yml/badge.svg)](https://github.com/stremovskyy/balaka/actions/workflows/ci.yml)
+
 Local-only TTS application with a FastAPI backend and a separate static frontend.
 
 Balaka runs the speech model on your machine. There is no remote inference fallback, no Hugging Face Space dependency at request time, and no hidden service layer behind the API. The current default model is `k2-fsa/OmniVoice`.
@@ -79,6 +81,14 @@ Alternative:
 
 ```bash
 python main.py
+```
+
+Convenience commands:
+
+```bash
+make run
+make test
+make smoke
 ```
 
 ## Default user flow
@@ -216,6 +226,13 @@ Run tests:
 pytest
 ```
 
+Or use:
+
+```bash
+make test
+make smoke
+```
+
 The frontend is intentionally build-free. Static files are served directly by FastAPI from `frontend/`.
 
 ## Troubleshooting
@@ -244,3 +261,9 @@ Make sure both of these are provided:
 - This project is local-only by design
 - There is no remote Space fallback
 - The backend keeps model-specific logic inside the runtime service instead of leaking it into the API layer
+
+## Project files
+
+- [CONTRIBUTING.md](CONTRIBUTING.md)
+- [LICENSE](LICENSE)
+- [Makefile](Makefile)
