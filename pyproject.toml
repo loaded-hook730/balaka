@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "balaka"
+version = "0.1.0"
+description = "Local TTS backend with a separate frontend."
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+keywords = ["tts", "speech", "fastapi", "local-inference", "voice-cloning"]
+dependencies = [
+    "fastapi>=0.135,<1.0",
+    "uvicorn>=0.44,<1.0",
+    "pydantic-settings>=2.13,<3.0",
+    "python-multipart>=0.0.24,<1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/stremovskyy/balaka"
+Repository = "https://github.com/stremovskyy/balaka.git"
+
+[project.scripts]
+balaka = "balaka.main:run"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0,<10.0",
+]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

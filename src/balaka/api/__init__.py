@@ -1,0 +1,3 @@
+from .routes.tts import router as tts_router
+
+__all__ = ["tts_router"]
